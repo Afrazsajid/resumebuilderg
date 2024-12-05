@@ -17,9 +17,9 @@ const Home: React.FC = () => {
     if (element instanceof HTMLElement) {
       const canvas = await html2canvas(element, {
         scale: 2, // Adjust the resolution if needed
-        width: 595, // A4 width in pixels (210mm * 2.85)
-        height: 842, // A4 height in pixels (297mm * 2.85)
-        useCORS: true, // Enable CORS if images are used from external sources
+        // A4 width in pixels (210mm * 2.85)
+         // A4 height in pixels (297mm * 2.85)
+      // Enable CORS if images are used from external sources
       });// Render the content to canvas
       const imgData = canvas.toDataURL("image/png"); // Convert canvas to PNG
   
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6" id="resume">
+      <div className="max-w-4xl  min-w-[850px] mx-auto bg-white shadow-lg rounded-lg p-6" id="resume">
         <Beader />
         <Summary />
         <WorkExperience />

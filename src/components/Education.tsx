@@ -5,15 +5,7 @@ export default function Education() {
         institution: "SM Science College, Karachi, Pakistan",
         year: "2025",
       },
-      {
-        degree: "Matriculation",
-        institution: "Adamjee Model School, Karachi, Pakistan",
-        year: "2023",
-        details: [
-          "84% score in matriculation exams.",
-          "Represented my school in Board of Secondary Speech Competition, showcasing workplace skills.",
-        ],
-      },
+    
       {
         degree: "Matriculation",
         institution: "Adamjee Model School, Karachi, Pakistan",
