@@ -15,7 +15,12 @@ const Home: React.FC = () => {
   
     // Ensure the element is available and of the correct type
     if (element instanceof HTMLElement) {
-      const canvas = await html2canvas(element, { scale: 2 }); // Render the content to canvas
+      const canvas = await html2canvas(element, {
+        scale: 2, // Adjust the resolution if needed
+        width: 595, // A4 width in pixels (210mm * 2.85)
+        height: 842, // A4 height in pixels (297mm * 2.85)
+        useCORS: true, // Enable CORS if images are used from external sources
+      });// Render the content to canvas
       const imgData = canvas.toDataURL("image/png"); // Convert canvas to PNG
   
       const pdf = new jsPDF("p", "mm", "a4"); // Portrait orientation, A4 size
