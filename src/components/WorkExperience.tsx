@@ -14,6 +14,7 @@ export default function WorkExperience() {
     ];
   
     return (
+      <>
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Work Experience</h2>
         {experiences.map((exp, index) => (
@@ -28,6 +29,7 @@ export default function WorkExperience() {
           </div>
         ))}
       </div>
+      </>
     );
   }
   
